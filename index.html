@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,59 +8,64 @@
     <!-- google fonts roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- font awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- tailwindcss -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
-        
+
     </style>
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-   <div class="root">
-    
-        <!-- topbar -->
-        <div class="topbar bg-black">
-            <div class="container w-[90%] mx-auto flex 
-            items-center justify-center">
-                <p class="text-white text-[12px] py-2 font-roboto text-center">
-                    Sign up and get 20% off to your first order. <a class="
-                    underline
-                    " href="#">Sign Up Now</a>
-                </p>
+    <div class="root">
+
+        <header>
+            <!-- topbar -->
+            <div class="topbar bg-black">
+                <div class="container w-[90%] mx-auto flex 
+                items-center justify-center">
+                    <p class="text-white text-[12px] py-2 font-roboto text-center">
+                        Sign up and get 20% off to your first order. <a class="
+                        underline
+                        " href="#">Sign Up Now</a>
+                    </p>
+                </div>
             </div>
-        </div>
-        
-        <!-- header -->
-        <div class="header">
-            <div class="container w-[90%] mx-auto flex items-center justify-between
-            py-4
-            ">
-                <div class="
-                flex gap-3
-                items-center
+
+            <!-- header -->
+            <div class="header">
+                <div class="container w-[90%] mx-auto flex items-center justify-between
+                py-4
                 ">
-                    <div class="menu md:hidden text-2xl">
-                        <i class="fa fa-bars"></i>
+                    <div class="
+                    flex gap-3
+                    items-center
+                    ">
+                        <div class="menu md:hidden text-2xl">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                        <div class="logo">
+                            <img src="images/logo/shop.co.png" alt="logo">
+                        </div>
                     </div>
-                    <div class="logo">
-                        <img src="images/logo/shop.co.png" alt="logo">
+
+                    <div class="cart text-2xl flex gap-3">
+                        <i class="fa-solid fa-search"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-user-circle"></i>
                     </div>
-                </div>
-                
-                <div class="cart text-2xl flex gap-3">   
-                    <i class="fa-solid fa-search"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <i class="fa-solid fa-user-circle"></i>
                 </div>
             </div>
-        </div>
-        
+        </header>
+
         <!-- banner -->
-        <section class="banner bg-gray-100 py-10">
+        <section class="banner bg-gray-100 py-10
+        relative overflow-hidden">
             <div class="container w-[90%] mx-auto">
                 <div class="banner-content">
                     <div>
@@ -67,7 +73,8 @@
                             FIND CLOTHES THAT MATCHES YOUR STYLE
                         </h1>
                         <p class="text-lg font-roboto text-gray-600 mb-7 text-justify">
-                            Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
+                            Browse through our diverse range of meticulously crafted garments, designed to bring out
+                            your individuality and cater to your sense of style.
                         </p>
                     </div>
                     <div class="btn w-full mt-3 mb-7">
@@ -121,9 +128,11 @@
                             </p>
                         </div>
                     </div>
-                    
+
                     <!-- banner featured -->
-                    <div class="banner-featured mt-5">
+                    <div class="banner-featured mt-5 
+                    pb-100
+                    ">
                         <div class="images 
                         
                         items-center
@@ -131,29 +140,481 @@
                         relative
                         ">
                             <img class="
+                            absolute
+                            top-33
+                            left-4
+                            w-[16%]
+                            z-[3]
+                            " src="images/Vector.png" alt="">
+
+                            <img class="
+                            absolute
+                            right-3
+                            top-8
+                            z-[2]
+                            " src="images/Vector.png" alt="">
+
+                            <img class="
                             w-[70%]
                             absolute
                             left-0
                             top-20
+                            z-[2]
                             " src="images/man-1.png" alt="featured">
                             <img class="
                             w-[100%]
                             top-10
                             right-0
                             absolute
-                            z-[-1]
+                            z-[1]
                             " src="images/man-2.png" alt="featured">
                         </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="brand-container
+            bg-black
+            relative
+            w-full
+            py-10
+            z-[10]
+            ">
+                <div class="brands
+                        w-[90%]
+                        mx-auto
+                        flex gap-5
+                        items-center
+                        justify-center
+                        flex-wrap
+                        relative
+                        left-0
+                        ">
+                    <div class="brand-item ">
+                        <img src="images/vesca.png" alt="">
+                    </div>
+                    <div class="brand-item ">
+                        <img src="images/zara.png" alt="">
+                    </div>
+                    <div class="brand-item ">
+                        <img src="images/gucci.png" alt="">
+                    </div>
+                    <div class="brand-item ">
+                        <img src="images/prada.png" alt="">
+                    </div>
+                    <div class="brand-item ">
+                        <img src="images/calvin.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
-    
-    
-    
-   </div>
-    
-    
-<script src="js/app.js"></script>
+
+        <!-- new arrivals -->
+        <section class="new-arrivals py-10 
+        ">
+            <div class="container w-[90%] mx-auto">
+                <div class="section-title
+                    mb-10
+                ">
+                    <h2 class="text-4xl 
+                    uppercase
+                    text-center
+                    font-roboto font-extrabold text-black">
+                        New Arrivals
+                    </h2>
+                </div>
+                <div class="new-arrivals-content">
+                    <div class="new-arrivals-item
+                    flex
+                    flex-col
+                    justify-center
+                    items-center
+                    ">
+                        <div class="
+                        text-center
+                        ">
+                            <img src="images/products/t-shirt.png" alt="new-arrivals">
+                        </div>
+                        <div class="
+                        mt-3
+                        mb-3
+                        ">
+                            <h2 class="text-xl  font-medium text-black">
+                                T-shirt with Tape Details
+                            </h2>
+                            <p class="text-lg font-roboto text-orange-400">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half"></i>
+                                <span class="text-black">4.5/5</span>
+                            </p>
+                            <p class="text-2xl font-roboto 
+                            text-black
+                            font-bold
+                            ">
+                                $ 99.99
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="
+                    mt-10
+                    ">
+                        <a class="
+                        text-black
+                        ring-2
+                        ring-gray-200
+                        py-3
+                        w-full
+                        text-center
+                        font-roboto
+                        inline-block
+                        rounded-full
+                        text-xl
+                        transition
+                        hover:ring-2
+                        hover:ring-black
+                        hover:bg-black
+                        hover:text-white
+                        " href="#">View All</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Selling -->
+        <section class="new-arrivals py-10 
+        ">
+            <div class="container w-[90%] mx-auto">
+                <div class="section-title
+                    mb-10
+                ">
+                    <h2 class="text-4xl 
+                    uppercase
+                    text-center
+                    font-roboto font-extrabold text-black">
+                        Top Selling
+                    </h2>
+                </div>
+                <div class="new-arrivals-content">
+                    <div class="new-arrivals-item
+                    flex
+                    flex-col
+                    justify-center
+                    items-center
+                    ">
+                        <div class="
+                        text-center
+                        ">
+                            <img src="images/products/t-shirt.png" alt="new-arrivals">
+                        </div>
+                        <div class="
+                        mt-3
+                        mb-3
+                        ">
+                            <h2 class="text-xl  font-medium text-black">
+                                T-shirt with Tape Details
+                            </h2>
+                            <p class="text-lg font-roboto text-orange-400">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half"></i>
+                                <span class="text-black">4.5/5</span>
+                            </p>
+                            <p class="text-2xl font-roboto 
+                            text-black
+                            font-bold
+                            ">
+                                $ 99.99
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="
+                    mt-10
+                    ">
+                        <a class="
+                        text-black
+                        ring-2
+                        ring-gray-200
+                        py-3
+                        w-full
+                        text-center
+                        font-roboto
+                        inline-block
+                        rounded-full
+                        text-xl
+                        transition
+                        hover:ring-2
+                        hover:ring-black
+                        hover:bg-black
+                        hover:text-white
+                        " href="#">View All</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- categories -->
+        <section class="categories py-10 
+        
+        ">
+            <div class="container w-[90%] mx-auto
+            bg-gray-100
+            py-10
+            rounded-2xl
+            px-5
+            ">
+                <div class="section-title
+                    mb-8
+                ">
+                    <h2 class="text-4xl 
+                    uppercase
+                    text-center
+                    font-roboto font-extrabold text-black">
+                        BROWSE BY dress STYLE
+                    </h2>
+                </div>
+                <div class="categories-content
+                flex
+                flex-col
+                gap-6
+                ">
+                    <div class="categories-item
+                    flex
+                    relative
+                    bg-white
+                    rounded-3xl
+                    overflow-hidden
+                    ">
+                        <h2 class="text-3xl
+                        font-semibold
+                        absolute
+                        top-4
+                        left-5
+                        ">
+                            Casual
+                        </h2>
+                        <div class="
+                        w-full
+                        ">
+                            <img class="
+                            w-full
+                            
+                            " src="images/casual.png" alt="">
+                        </div>
+                    </div>
+                    <div class="categories-item
+                    flex
+                    relative
+                    bg-white
+                    rounded-3xl
+                    overflow-hidden
+                    ">
+                        <h2 class="text-3xl
+                        font-semibold
+                        absolute
+                        top-4
+                        left-5
+                        ">
+                            Formal
+                        </h2>
+                        <div class="w-full">
+                            <img class="
+                            w-full
+                            " src="images/formal.png" alt="">
+                        </div>
+                    </div>
+                    <div class="categories-item
+                    flex
+                    relative
+                    bg-white
+                    rounded-3xl
+                    overflow-hidden
+                    ">
+                        <h2 class="text-3xl
+                        font-semibold
+                        absolute
+                        top-4
+                        left-5
+                        ">
+                            Party
+                        </h2>
+                        <div class="w-full">
+                            <img class="
+                            w-full
+                            " src="images/party.png" alt="">
+                        </div>
+                    </div>
+                    <div class="categories-item
+                    flex
+                    relative
+                    bg-white
+                    rounded-3xl
+                    overflow-hidden
+                    ">
+                        <h2 class="text-3xl
+                        font-semibold
+                        absolute
+                        top-4
+                        left-5
+                        ">
+                            Gym
+                        </h2>
+                        <div class="
+                        w-full
+                        ">
+                            <img class="
+                            w-[80%]
+                            float-right
+                            " src="images/gym.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- client feedback -->
+        <section class="client-feedback py-10 
+        
+        ">
+            <div class="container w-[90%] mx-auto">
+                <div class="section-title
+                    mb-7
+                    flex
+                    items-end
+                    justify-between
+                ">
+                    <h2 class="text-4xl 
+                    uppercase
+                    text-start
+                    font-roboto font-extrabold text-black">
+                        Our Happy Customers
+                    </h2>
+                    <div class="slide-arrows
+                    text-3xl
+                    flex
+                    gap-5
+                    ">
+                        <button>
+                            <i class="fa fa-arrow-left-long"></i>
+                        </button>
+                        <button>
+                            <i class="fa fa-arrow-right-long"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="client-feedback-content
+                flex
+                gap-5
+                ">
+                    <div class="client-feedback-item
+                    border-1
+                    border-gray-200
+                    rounded-3xl
+                    w-full
+                    ">
+                        <div class="p-8
+                        flex
+                        flex-col
+                        gap-2
+                        ">
+                            <div class="stars 
+                            text-xl
+                            text-orange-400
+                            ">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <span class="text-xl block font-roboto font-bold">
+                                Sarah M.
+                                <i class="fa fa-check-circle text-green-600"></i>
+                            </span>
+                            <p class="text-md font-roboto
+                            text-gray-500
+                            text-justify
+                            ">
+                                "I'm blown away by the quality and style of the clothes I received from Shop.co. From
+                                casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- subscribe -->
+        <section class="subscribe py-10">
+            <div class="container w-[90%] mx-auto
+            rounded-3xl
+            bg-black
+            p-10
+            ">
+                <div class="section-title
+                        mb-8
+                    ">
+                    <h2 class="text-4xl 
+                        uppercase
+                        text-start
+                        font-roboto font-extrabold text-white">
+                        STAY UPTO DATE ABOUT OUR LATEST OFFERS
+                    </h2>
+                </div>
+                <div class="subscribe-content
+                    flex
+                    gap-5
+                    flex-col
+                    ">
+                    <div class="w-full
+                    relative
+                    ">
+                        <input class="
+                        py-2
+                        px-5
+                        pl-10
+                        rounded-3xl
+                        border-2
+                        border-gray-200
+                        outline-none
+                        w-full
+                        text-gray-600
+                        bg-white
+                        " type="email" placeholder="Enter your email address">
+                        <i class="fa fa-envelope absolute
+                        top-3
+                        left-4
+                        text-xl
+                        text-gray-400
+                        
+                        "></i>
+                    </div>
+                    
+                    <button class="
+                        text-black
+                        bg-white
+                        py-2
+                        ring-2
+                        ring-gray-200
+                        w-full
+                        rounded-3xl
+                        
+                        font-semibold
+                        " type="submit">Subscribe to Newsletter</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <script src="js/app.js"></script>
 </body>
+
 </html>
