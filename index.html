@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Online Shopping Cart</title>
+    <!-- google fonts roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- tailwindcss -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        
+    </style>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="root">
+    
+        <!-- topbar -->
+        <div class="topbar bg-black">
+            <div class="container w-[90%] mx-auto flex 
+            items-center justify-center">
+                <p class="text-white text-[12px] py-2 font-roboto text-center">
+                    Sign up and get 20% off to your first order. <a class="
+                    underline
+                    " href="#">Sign Up Now</a>
+                </p>
+            </div>
+        </div>
+        
+        <!-- header -->
+        <div class="header">
+            <div class="container w-[90%] mx-auto flex items-center justify-between
+            py-4
+            ">
+                <div class="
+                flex gap-3
+                items-center
+                ">
+                    <div class="menu md:hidden text-2xl">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <div class="logo">
+                        <img src="images/logo/shop.co.png" alt="logo">
+                    </div>
+                </div>
+                
+                <div class="cart text-2xl flex gap-3">   
+                    <i class="fa-solid fa-search"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-solid fa-user-circle"></i>
+                </div>
+            </div>
+        </div>
+        
+        <!-- banner -->
+        <section class="banner bg-gray-100 py-10">
+            <div class="container w-[90%] mx-auto">
+                <div class="banner-content">
+                    <div>
+                        <h1 class="text-5xl font-roboto font-extrabold mb-7 text-dark-900">
+                            FIND CLOTHES THAT MATCHES YOUR STYLE
+                        </h1>
+                        <p class="text-lg font-roboto text-gray-600 mb-7 text-justify">
+                            Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
+                        </p>
+                    </div>
+                    <div class="btn w-full mt-3 mb-7">
+                        <a href="#" class=" 
+                            bg-black 
+                            py-3 
+                            px-5
+                            text-white 
+                            font-roboto
+                            inline-block
+                            w-full
+                            text-center
+                            rounded-full
+                            hover:ring-2
+                            hover:ring-black
+                            hover:bg-white
+                            hover:text-black
+                            text-xl
+                            transition
+                         ">
+                            Shop Now
+                        </a>
+                    </div>
+                    <!-- achivements -->
+                    <div class="achivements flex
+                    gap-5 justify-center
+                    flex-wrap
+                    ">
+                        <div class="mb-2">
+                            <h2 class="text-xl  font-medium text-dark-900">
+                                200+
+                            </h2>
+                            <p class="text-xs font-roboto text-gray-600">
+                                International Brands
+                            </p>
+                        </div>
+                        <div class="mb-2">
+                            <h2 class="text-xl  font-medium text-dark-900">
+                                2,000+
+                            </h2>
+                            <p class="text-xs font-roboto text-gray-600">
+                                High-Quality Products
+                            </p>
+                        </div>
+                        <div class="mb-2">
+                            <h2 class="text-xl  font-medium text-dark-900">
+                                30,000+
+                            </h2>
+                            <p class="text-xs font-roboto text-gray-600">
+                                Happy Customers
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- banner featured -->
+                    <div class="banner-featured mt-5">
+                        <div class="images 
+                        
+                        items-center
+                        justify-center
+                        relative
+                        ">
+                            <img class="
+                            w-[70%]
+                            absolute
+                            left-0
+                            top-20
+                            " src="images/man-1.png" alt="featured">
+                            <img class="
+                            w-[100%]
+                            top-10
+                            right-0
+                            absolute
+                            z-[-1]
+                            " src="images/man-2.png" alt="featured">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+    
+   </div>
+    
+    
+<script src="js/app.js"></script>
+</body>
+</html>
