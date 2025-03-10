@@ -26,10 +26,10 @@
 
         <header>
             <!-- topbar -->
-            <div class="topbar bg-black">
+            <div class="topbar bg-black py-1">
                 <div class="container w-[90%] mx-auto flex 
                 items-center justify-center">
-                    <p class="text-white text-[12px] py-2 font-roboto text-center">
+                    <p class="text-white text-[12px] md:text-[18px] py-2 font-roboto text-center">
                         Sign up and get 20% off to your first order. <a class="
                         underline
                         " href="#">Sign Up Now</a>
@@ -52,10 +52,46 @@
                         <div class="logo">
                             <img src="images/logo/shop.co.png" alt="logo">
                         </div>
+                        <div class="menu-list text-lg md:flex gap-5 hidden">
+                            <a href="#">Shop </a>
+                            <a href="#">On Sale</a>
+                            <a href="#">Arrivals</a>
+                            <a href="#">Brands</a>
+                        </div>
                     </div>
 
-                    <div class="cart text-2xl flex gap-3">
-                        <i class="fa-solid fa-search"></i>
+                    <div class="cart text-2xl flex gap-3
+                    items-center
+                    w-full
+                    md:w-auto
+                    ">
+
+                        <div class="search relative
+                            w-full
+                            ">
+                            <input class="
+                            hidden
+                            md:block
+                            ring-2
+                            ring-gray-300
+                            rounded-full
+                            pl-10
+                            pr-5
+                            py-1
+                            w-full
+                            text-lg
+                            " type="text" placeholder="Search">
+                            <span class="absolute left-0 top-0 h-full 
+                            text-lg
+                            text-gray-500
+                            left-3
+                            flex items-center justify-center">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                        </div>
+                        <span class="md:hidden">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
                         <i class="fa-solid fa-cart-shopping"></i>
                         <i class="fa-solid fa-user-circle"></i>
                     </div>
@@ -65,120 +101,177 @@
 
         <!-- banner -->
         <section class="banner bg-gray-100 py-10
-        relative overflow-hidden">
-            <div class="container w-[90%] mx-auto">
-                <div class="banner-content">
-                    <div>
-                        <h1 class="text-5xl font-roboto font-extrabold mb-7 text-dark-900">
-                            FIND CLOTHES THAT MATCHES YOUR STYLE
-                        </h1>
-                        <p class="text-lg font-roboto text-gray-600 mb-7 text-justify">
-                            Browse through our diverse range of meticulously crafted garments, designed to bring out
-                            your individuality and cater to your sense of style.
-                        </p>
-                    </div>
-                    <div class="btn w-full mt-3 mb-7">
-                        <a href="#" class=" 
-                            bg-black 
-                            py-3 
-                            px-5
-                            text-white 
-                            font-roboto
-                            inline-block
-                            w-full
-                            text-center
-                            rounded-full
-                            hover:ring-2
-                            hover:ring-black
-                            hover:bg-white
-                            hover:text-black
-                            text-xl
-                            transition
-                         ">
-                            Shop Now
-                        </a>
-                    </div>
-                    <!-- achivements -->
-                    <div class="achivements flex
-                    gap-5 justify-center
-                    flex-wrap
+        pb-0
+        relative">
+            <div class="container w-[90%] mx-auto
+            overflow-hidden
+            pb-[10rem]
+            xl:pb-0
+            md:pb-5
+            md:items-center
+            md:flex
+            md:flex-row
+            ">
+                <div class="banner-content
+                md:flex
+                md:flex-row
+                md:justify-between
+                md:items-center
+                xl:w-full
+                xl:overflow-hidden
+                xl:py-10
+                lg:flex
+                lg:flex-row
+                lg:justify-between
+                lg:items-center
+                lg:gap-10
+                ">
+                    <div class="banner-content-left
+                    md:w-1/2
                     ">
-                        <div class="mb-2">
-                            <h2 class="text-xl  font-medium text-dark-900">
-                                200+
-                            </h2>
-                            <p class="text-xs font-roboto text-gray-600">
-                                International Brands
+                        <div>
+                            <h1 class="text-5xl font-roboto font-extrabold mb-7 text-dark-900">
+                                FIND CLOTHES THAT MATCHES YOUR STYLE
+                            </h1>
+                            <p class="text-lg font-roboto text-gray-600 mb-7 text-justify">
+                                Browse through our diverse range of meticulously crafted garments, designed to bring out
+                                your individuality and cater to your sense of style.
                             </p>
                         </div>
-                        <div class="mb-2">
-                            <h2 class="text-xl  font-medium text-dark-900">
-                                2,000+
-                            </h2>
-                            <p class="text-xs font-roboto text-gray-600">
-                                High-Quality Products
-                            </p>
+                        <div class="btn w-full mt-3 mb-7">
+                            <a href="#" class=" 
+                                bg-black 
+                                py-3 
+                                px-5
+                                text-white 
+                                font-roboto
+                                inline-block
+                                w-full
+                                text-center
+                                rounded-full
+                                hover:ring-2
+                                hover:ring-black
+                                hover:bg-white
+                                hover:text-black
+                                text-xl
+                                transition
+                                md:w-[15rem]
+                             ">
+                                Shop Now
+                            </a>
                         </div>
-                        <div class="mb-2">
-                            <h2 class="text-xl  font-medium text-dark-900">
-                                30,000+
-                            </h2>
-                            <p class="text-xs font-roboto text-gray-600">
-                                Happy Customers
-                            </p>
+                        <!-- achivements -->
+                        <div class="achivements flex
+                        gap-5 justify-center
+                        md:justify-start
+                        flex-wrap
+                        ">
+                            <div class="mb-2">
+                                <h2 class="text-xl  font-medium text-dark-900">
+                                    200+
+                                </h2>
+                                <p class="text-xs font-roboto text-gray-600">
+                                    International Brands
+                                </p>
+                            </div>
+                            <div class="mb-2">
+                                <h2 class="text-xl  font-medium text-dark-900">
+                                    2,000+
+                                </h2>
+                                <p class="text-xs font-roboto text-gray-600">
+                                    High-Quality Products
+                                </p>
+                            </div>
+                            <div class="mb-2">
+                                <h2 class="text-xl  font-medium text-dark-900">
+                                    30,000+
+                                </h2>
+                                <p class="text-xs font-roboto text-gray-600">
+                                    Happy Customers
+                                </p>
+                            </div>
                         </div>
                     </div>
 
                     <!-- banner featured -->
-                    <div class="banner-featured mt-5 
-                    pb-100
+                    <div class="
+                    md:w-1/2
+                    banner-featured mt-5 
+                    pb-88
+                    md:h-[100%]
                     ">
                         <div class="images 
-                        
+                        top-[-4rem]
                         items-center
                         justify-center
                         relative
+                        md:w-[90%]
+                        md:top-[0rem]
+                        lg:top-[-8rem]
                         ">
                             <img class="
                             absolute
                             top-33
+                            lg:top-[10rem]
                             left-4
+                            lg:left-[15rem]
                             w-[16%]
+                            lg:w-[10%]
                             z-[3]
                             " src="images/Vector.png" alt="">
 
                             <img class="
                             absolute
                             right-3
-                            top-8
+                            top-25
+                            lg:top-[5rem]
+                            lg:right-[0rem]
                             z-[2]
                             " src="images/Vector.png" alt="">
 
-                            <img class="
-                            w-[70%]
-                            absolute
-                            left-0
-                            top-20
-                            z-[2]
-                            " src="images/man-1.png" alt="featured">
-                            <img class="
-                            w-[100%]
-                            top-10
-                            right-0
-                            absolute
-                            z-[1]
-                            " src="images/man-2.png" alt="featured">
+                            <div class="
+                            
+                            relative
+                            ">
+                                <img class="
+                                absolute
+                                left-0
+                                xl:left-[15rem]
+                                top-25
+                                md:top-15
+                                xl:top-[6rem]
+                                lg:top-[7rem]
+                                
+                                z-[2]
+                                " src="images/man-1.png" alt="featured">
+                                <img class="
+                                absolute
+                                right-0
+                                md:right-[-1.9rem]
+                                top-32
+                                xl:top-[6rem]
+                                lg:top-[7rem]
+                                md:top-[4rem]
+                                z-[1]
+                                md:top-30
+                                lg:top-23
+                                " src="images/man-2.png" alt="featured">
+                            </div>
                         </div>
 
                     </div>
                 </div>
             </div>
+
+            <!-- brands -->
             <div class="brand-container
             bg-black
-            relative
-            w-full
             py-10
-            z-[10]
+            mt-[-5rem]
+            relative
+            z-4
+            md:static
+            md:mt-0
             ">
                 <div class="brands
                         w-[90%]
@@ -187,8 +280,6 @@
                         items-center
                         justify-center
                         flex-wrap
-                        relative
-                        left-0
                         ">
                     <div class="brand-item ">
                         <img src="images/vesca.png" alt="">
@@ -551,7 +642,7 @@
         </section>
 
         <!-- subscribe -->
-        <section class="subscribe py-10">
+        <section class="subscribe py-10 bg-gray-100">
             <div class="container w-[90%] mx-auto
             rounded-3xl
             bg-black
@@ -595,7 +686,7 @@
                         
                         "></i>
                     </div>
-                    
+
                     <button class="
                         text-black
                         bg-white
@@ -612,6 +703,313 @@
         </section>
 
     </div>
+
+    <footer class="bg-gray-100 pt-5">
+        <div class="container w-[90%] mx-auto">
+            <div class="footer-content
+            border-b-2
+            border-gray-300
+            -pb-10
+            ">
+                <div class="footer-item pb-10">
+                    <div class="footer-item-content">
+                        <div class="footer-item-content-title pb-4">
+                            <img class="w-[10rem]" src="images/logo/shop.co.png" alt="logo">
+                        </div>
+                        <div class="footer-item-content-description">
+                            <p class="text-md font-roboto text-gray-500">
+                                Shop.co is a leading online fashion retailer that offers a wide range of stylish and
+                                affordable clothing for men, women, and children.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-item pb-10">
+                    <div class="footer-item-content ">
+                        <div class="footer-item-content-title pb-4
+                        flex
+                        gap-5
+                        ">
+                            <a class="text-xl
+                            ring-2
+                            ring-gray-300
+                            rounded-full
+                            p-2
+                            w-10
+                            h-10
+                            flex
+                            items-center
+                            justify-center
+                            text-black
+                            transition
+                            duration-300
+                            ease-in-out
+                            hover:ring-2
+                            hover:ring-black
+                            hover:bg-black
+                            hover:text-white
+                            " href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+
+                            <a class="text-xl
+                            rounded-full
+                            p-2
+                            w-10
+                            h-10
+                            flex
+                            items-center
+                            justify-center
+                            text-black
+                            ring-2
+                            ring-gray-300
+                            transition
+                            duration-300
+                            ease-in-out
+                            hover:ring-2
+                            hover:ring-black
+                            hover:bg-black
+                            hover:text-white
+                            " href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a class="text-xl
+                            ring-2
+                            ring-gray-300
+                            rounded-full
+                            p-2
+                            w-10
+                            h-10
+                            flex
+                            items-center
+                            justify-center
+                            text-black
+                            transition
+                            duration-300
+                            ease-in-out
+                            hover:ring-2
+                            hover:ring-black
+                            hover:bg-black
+                            hover:text-white
+                            " href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a class="text-xl
+                            ring-2
+                            ring-gray-300
+                            rounded-full
+                            p-2
+                            w-10
+                            h-10
+                            flex
+                            items-center
+                            justify-center
+                            text-black
+                            transition
+                            duration-300
+                            ease-in-out
+                            hover:ring-2
+                            hover:ring-black
+                            hover:bg-black
+                            hover:text-white
+                            " href="#">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-item pb-10
+                flex
+                justify-between
+                flex-wrap
+                gap-10
+                ">
+
+                    <div class="footer-item-content">
+                        <div class="footer-item-content-title pb-4">
+                            <h2 class="text-2xl 
+                            text-gray-900 uppercase
+                            font-semibold
+                            tracking-[0.2em]
+                            ">
+                                Company
+                            </h2>
+                        </div>
+                        <div class="
+                        flex
+                        flex-col
+                        gap-2
+                        ">
+                            <a href="#" class="text-md font-roboto
+                            text-xl
+                            text-gray-500">
+                                About
+                            </a>
+                            <a href="#" class="text-md font-roboto
+                            text-xl
+                            text-gray-500">
+                                Features
+                            </a>
+                            <a href="#" class="text-md font-roboto
+                            text-xl
+                            text-gray-500">
+                                Works
+                            </a>
+                            <a href="#" class="text-md font-roboto
+                            text-xl
+                            text-gray-500">
+                                Career
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="footer-item-content">
+                        <div class="footer-item-content-title pb-4">
+                            <h2 class="text-2xl 
+                            text-gray-900 uppercase
+                            font-semibold
+                            tracking-[0.2em]
+                            ">
+                                Help
+                            </h2>
+                        </div>
+                        <div class="
+                        flex
+                        flex-col
+                        gap-2
+                        ">
+                            <a href="#" class="text-md font-roboto
+                            text-xl
+                            text-gray-500">
+                                Customer Support
+                            </a>
+                            <a href="#" class="text-md font-roboto
+                            text-xl
+                            text-gray-500">
+                                Delivery Details
+                            </a>
+                            <a href="#" class="text-md font-roboto
+                            text-xl
+                            text-gray-500">
+                                Terms & Conditions
+                            </a>
+                            <a href="#" class="text-md font-roboto
+                            text-xl
+                            text-gray-500">
+                                Privacy Policy
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="footer-item-content">
+                        <div class="footer-item-content-title pb-4">
+                            <h2 class="text-2xl 
+                            text-gray-900 uppercase
+                            font-semibold
+                            tracking-[0.2em]
+                            ">
+                                FAQ
+                            </h2>
+                        </div>
+                        <div class="
+                        flex
+                        flex-col
+                        gap-2
+                        ">
+                            <a href="#" class="text-md font-roboto
+                            text-xl
+                            text-gray-500">
+                                Accounts
+                            </a>
+                            <a href="#" class="text-md font-roboto
+                            text-xl
+                            text-gray-500">
+                                Manage Deliveries
+                            </a>
+                            <a href="#" class="text-md font-roboto
+                            text-xl
+                            text-gray-500">
+                                Orders
+                            </a>
+                            <a href="#" class="text-md font-roboto
+                            text-xl
+                            text-gray-500">
+                                Payment
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="footer-item-content">
+                        <div class="footer-item-content-title pb-4">
+                            <h2 class="text-2xl 
+                            text-gray-900 uppercase
+                            font-semibold
+                            tracking-[0.2em]
+                            ">
+                                Resources
+                            </h2>
+                        </div>
+                        <div class="
+                        flex
+                        flex-col
+                        gap-2
+                        ">
+                            <a href="#" class="text-md font-roboto
+                            text-xl
+                            text-gray-500">
+                                Free eBook
+                            </a>
+                            <a href="#" class="text-md font-roboto
+                            text-xl
+                            text-gray-500">
+                                Development Tutorial
+                            </a>
+                            <a href="#" class="text-md font-roboto
+                            text-xl
+                            text-gray-500">
+                                How to - Blog
+                            </a>
+                            <a href="#" class="text-md font-roboto
+                            text-xl
+                            text-gray-500">
+                                Youtube Playlist
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom pb-10 pt-5">
+            <div class="container w-[90%] mx-auto">
+                <p class="text-md font-roboto text-gray-500
+                text-center
+                py-2
+                text-xl
+                ">
+                    Shop.co © 2000-2023, All Rights Reserved.
+                </p>
+                <div>
+                    <img class="
+                    mx-auto
+                    w-[25rem]
+                    " src="images/payment.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
 
 
     <script src="js/app.js"></script>
