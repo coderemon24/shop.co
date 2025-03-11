@@ -102,211 +102,554 @@
             </div>
         </header>
 
-        <!-- banner -->
-        <section class="banner bg-gray-100 py-10
-        pb-0
-        
-        relative">
-            <div class="container w-[90%] mx-auto
-            overflow-hidden
-            pb-[10rem]
-            xl:pb-0
-            md:pb-5
-            md:items-center
-            md:flex
-            md:flex-row
+        <section class="product-detail">
+            <div class="container w-[90%]
+            mx-auto
             ">
-                <div class="banner-content
-                md:flex
-                md:flex-row
-                md:justify-between
-                md:items-center
-                xl:w-full
-                xl:overflow-hidden
-                xl:py-10
-                lg:flex
-                lg:flex-row
-                lg:justify-between
-                lg:items-center
-                lg:gap-10
-                px-2
+                <div class="product-main 
+                border-t-1
+                border-gray-300
+                pb-10
                 ">
-                    <div class="banner-content-left
-                    md:w-1/2
+                    <!-- breadcrumb -->
+                    <div class="breadcrumb
+                    flex
+                    gap-3
+                    text-sm
+                    py-5
                     ">
+
                         <div>
-                            <h1 class="text-5xl font-roboto font-extrabold mb-7 text-dark-900">
-                                FIND CLOTHES THAT MATCHES YOUR STYLE
-                            </h1>
-                            <p class="text-lg font-roboto text-gray-600 mb-7 text-justify">
-                                Browse through our diverse range of meticulously crafted garments, designed to bring out
-                                your individuality and cater to your sense of style.
-                            </p>
+                            <a class="text-lg text-gray-800" href="#">Home</a>
+                            <span class="text-gray-800">
+                                <i class="fa-solid fa-chevron-right text-gray-800"></i>
+                            </span>
                         </div>
-                        <div class="btn w-full mt-3 mb-7">
-                            <a href="#" class=" 
-                                bg-black 
-                                py-3 
-                                px-5
-                                text-white 
-                                font-roboto
-                                inline-block
+
+                        <div>
+                            <a class="text-lg text-gray-800" href="#">Shop</a>
+                            <span class="text-gray-800">
+                                <i class="fa-solid fa-chevron-right text-gray-800"></i>
+                            </span>
+                        </div>
+
+                        <div>
+                            <a class="text-lg text-gray-800" href="#">Men</a>
+                            <span class="text-gray-800">
+                                <i class="fa-solid fa-chevron-right text-gray-800"></i>
+                            </span>
+                        </div>
+
+                        <div>
+                            <a class="text-lg text-gray-800" href="#">T-Shirt</a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- product -->
+                    <div class="product
+                    
+                    ">
+
+                        <div class="product-img-slide pb-4">
+                            <div class="main-img pb-8">
+                                <img class="
                                 w-full
-                                text-center
+                                mx-auto
+                                " src="images/products/p-details.png" alt="">
+                            </div>
+                            <div class="img-slide
+                            flex  gap-5
+                            flex-wrap
+                            justify-center
+                            ">
+                                <div class="img-item w-1/4">
+                                    <img class="w-full" src="images/products/d-slide-1.png" alt="">
+                                </div>
+                                <div class="img-item w-1/4">
+                                    <img class="w-full" src="images/products/d-slide-2.png" alt="">
+                                </div>
+                                <div class="img-item w-1/4">
+                                    <img class="w-full" src="images/products/d-slide-3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-info">
+                            <h1 class="
+                            text-[2.8rem] font-extrabold
+                            uppercase
+                            leading-tight
+                            ">One Life Graphic T-shirt</h1>
+
+                            <div class="reviews text-lg py-2">
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star-half text-yellow-400"></i>
+
+                                <span class="text-gray-800 font-medium text-lg">
+                                    4.5/5
+                                </span>
+                            </div>
+
+                            <div class="prices">
+                                <span class="text-3xl font-bold text-black">$25.00</span>
+                                <span class="text-gray-500 font-medium text-2xl line-through">$35.00</span>
+                                <span class="
+                                bg-red-200
+                                text-red-500
+                                text-lg
+                                transparent
+                                font-medium
+                                py-2
+                                px-4
                                 rounded-full
+                                ml-2
+                                
+                                ">
+                                    40%
+                                </span>
+                            </div>
+
+                            <div class="product-text
+                            py-7
+                            border-b-2
+                            border-gray-200
+                            ">
+                                <p class="
+                                text-gray-500
+                                text-lg
+                                
+                                ">
+                                    This graphic t-shirt which is perfect for any occasion. Crafted from a soft and
+                                    breathable fabric, it offers superior comfort and style.
+                                </p>
+                            </div>
+
+                            <div class="select-colors
+                            border-b-2
+                            border-gray-200
+                            pb-7
+                            pt-3
+                            ">
+                                <p class="
+                                text-gray-600
+                                text-xl  
+                                py-2
+                                ">Select Color</p>
+                                <div class="colors
+                                flex
+                                gap-3
+                                pt-2
+                                ">
+                                    <div class="color-item
+                                    bg-gray-800
+                                    rounded-full
+                                    w-10
+                                    h-10
+                                    flex
+                                    items-center
+                                    justify-center
+                                    text-xl
+                                    text-white
+                                    ">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="color-item
+                                    bg-blue-800
+                                    rounded-full
+                                    w-10
+                                    h-10
+                                    flex
+                                    items-center
+                                    justify-center
+                                    text-xl
+                                    text-white
+                                    ">
+                                        <!-- <i class="fa-solid fa-check"></i> -->
+                                    </div>
+                                    <div class="color-item
+                                    bg-red-800
+                                    rounded-full
+                                    w-10
+                                    h-10
+                                    flex
+                                    items-center
+                                    justify-center
+                                    text-xl
+                                    text-white
+                                    ">
+                                        <!-- <i class="fa-solid fa-check"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="select-sizes
+                            pt-3
+                            pb-7
+                            border-b-2
+                            border-gray-200
+                            ">
+                                <p class="
+                                text-gray-600
+                                text-xl  
+                                py-2
+                                ">Choose Size</p>
+                                <div class="sizes
+                                flex
+                                gap-3
+                                pt-2
+                                ">
+
+                                    <p class="
+                                    py-2.5
+                                    px-5.5
+                                    bg-gray-200
+                                    rounded-full
+                                    text-gray-600
+                                    text-lg
+                                    ">Small</p>
+
+                                    <p class="
+                                    py-2.5
+                                    px-5.5
+                                    bg-gray-200
+                                    rounded-full
+                                    text-gray-600
+                                    text-lg
+                                    ">Medium</p>
+
+                                    <p class="
+                                    py-2.5
+                                    px-5.5
+                                    bg-black
+                                    rounded-full
+                                    text-white
+                                    text-lg
+                                    ">Large</p>
+
+                                    <p class="
+                                    py-2.5
+                                    px-5.5
+                                    bg-gray-200
+                                    rounded-full
+                                    text-gray-600
+                                    text-lg
+                                    ">X-Large</p>
+
+                                </div>
+                            </div>
+
+                            <div class="add-to-cart
+                            flex
+                            gap-5
+                            py-7
+                            ">
+                                <div class="
+                                bg-gray-200
+                                py-1
+                                px-5
+                                rounded-full
+                                flex
+                                items-center
+                                w-1/3
+                                text-xl
+                                justify-center
+                                ">
+                                    <button class="
+                                    cursor-pointer
+                                    ">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </button>
+                                    <span class="
+                                    text-2xl
+                                    font-medium
+                                    px-4
+                                    py-1
+                                    ">1</span>
+
+                                    <button class="
+                                    cursor-pointer
+                                    ">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+
+                                </div>
+
+                                <button class="
+                                bg-black
+                                text-white
+                                py-3
+                                px-5
+                                rounded-full
+                                w-2/3
+                                text-xl
+                                cursor-pointer
+                                hover:bg-transparent
+                                hover:text-black
                                 hover:ring-2
                                 hover:ring-black
-                                hover:bg-white
-                                hover:text-black
-                                text-xl
                                 transition
-                                md:w-[15rem]
-                             ">
-                                Shop Now
-                            </a>
-                        </div>
-                        <!-- achivements -->
-                        <div class="achivements flex
-                        gap-5 justify-center
-                        md:justify-start
-                        flex-wrap
-                        ">
-                            <div class="mb-2">
-                                <h2 class="text-xl  font-medium text-dark-900">
-                                    200+
-                                </h2>
-                                <p class="text-xs font-roboto text-gray-600">
-                                    International Brands
-                                </p>
+                                ">Add To Cart</button>
                             </div>
-                            <div class="mb-2">
-                                <h2 class="text-xl  font-medium text-dark-900">
-                                    2,000+
-                                </h2>
-                                <p class="text-xs font-roboto text-gray-600">
-                                    High-Quality Products
-                                </p>
-                            </div>
-                            <div class="mb-2">
-                                <h2 class="text-xl  font-medium text-dark-900">
-                                    30,000+
-                                </h2>
-                                <p class="text-xs font-roboto text-gray-600">
-                                    Happy Customers
-                                </p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- banner featured -->
-                    <div class="
-                    md:w-1/2
-                    banner-featured mt-5 
-                    pb-88
-                    md:h-[100%]
+                            <div class="tabs">
+                                <ul class="
+                                flex
+                                justify-between
+                                border-b-2
+                                border-gray-200
+                                text-gray-500
+                                text-xl
+                                pt-3
+                                cursor-pointer
+                                font-medium
+                                ">
+                                    <li class="
+                                    cursor-pointer
+                                    
+                                    ">Product Details</li>
+                                    <li class="
+                                    cursor-pointer
+                                    border-b-2
+                                    border-black
+                                    text-black
+                                    pb-[1rem]
+                                    ">Return & Reviews</li>
+                                    <li class="
+                                    cursor-pointer
+                                    ">FAQs</li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-contents pt-10">
+                                <div class="tab-title-bar
+                                flex
+                                justify-between
+                                items-center
+                                ">
+                                    <h2 class="
+                                    text-3xl
+                                    font-bold
+                                    ">
+                                        All Reviews
+                                        <span class="
+                                            text-gray-400
+                                            text-lg
+                                            font-medium
+                                    ">(452)</span>
+                                    </h2>
+
+                                    <button class="
+                                        bg-black
+                                        text-white
+                                        py-2.5
+                                        px-7
+                                        rounded-full
+                                        text-lg
+                                        cursor-pointer
+                                        hover:bg-transparent
+                                        ">
+                                        Write a Review
+                                    </button>
+                                </div>
+
+                                <div class="client-feedback-content
+                                flex
+                                flex-col
+                                md:flex-row
+                                md:justify-center
+                                md:items-center
+                                gap-5
+                                pt-10
+                                ">
+
+                                    <div class="client-feedback-item
+                    border-1
+                    border-gray-200
+                    rounded-3xl
+                    w-full
                     ">
-                        <div class="images 
-                        top-[-4rem]
-                        items-center
-                        justify-center
-                        relative
-                        md:w-[90%]
-                        md:top-[0rem]
-                        lg:top-[-8rem]
+                                        <div class="p-8
+                        flex
+                        flex-col
+                        gap-2
                         ">
-                            <img class="
-                            absolute
-                            top-33
-                            lg:top-[10rem]
-                            left-4
-                            lg:left-[15rem]
-                            w-[16%]
-                            lg:w-[10%]
-                            z-[3]
-                            " src="images/Vector.png" alt="">
-
-                            <img class="
-                            absolute
-                            right-3
-                            top-25
-                            lg:top-[5rem]
-                            lg:right-[0rem]
-                            z-[2]
-                            " src="images/Vector.png" alt="">
-
-                            <div class="
-                            
-                            relative
+                                            <div class="stars 
+                            text-xl
+                            text-orange-400
                             ">
-                                <img class="
-                                absolute
-                                left-0
-                                xl:left-[15rem]
-                                top-25
-                                md:top-15
-                                xl:top-[6rem]
-                                lg:top-[7rem]
-                                
-                                z-[2]
-                                " src="images/man-1.png" alt="featured">
-                                <img class="
-                                absolute
-                                right-0
-                                md:right-[-1.9rem]
-                                top-32
-                                xl:top-[6rem]
-                                lg:top-[7rem]
-                                md:top-[4rem]
-                                z-[1]
-                                md:top-30
-                                lg:top-23
-                                " src="images/man-2.png" alt="featured">
-                            </div>
-                        </div>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <span class="text-xl block font-roboto font-bold">
+                                                Sarah M.
+                                                <i class="fa fa-check-circle text-green-600"></i>
+                                            </span>
+                                            <p class="text-md font-roboto
+                            text-gray-500
+                            text-justify
+                            ">
+                                                "I'm blown away by the quality and style of the clothes I received from
+                                                Shop.co. From
+                                                casual wear to elegant dresses, every piece I've bought has exceeded my
+                                                expectations.”
+                                            </p>
+                                        </div>
+                                    </div>
 
-                    </div>
-                </div>
-            </div>
-
-            <!-- brands -->
-            <div class="brand-container
-            bg-black
-            py-10
-            mt-[-5rem]
-            relative
-            z-4
-            md:static
-            md:mt-0
-            ">
-                <div class="brands
-                        w-[90%]
-                        mx-auto
-                        flex gap-5
-                        items-center
-                        justify-center
-                        flex-wrap
+                                    <div class="client-feedback-item
+                    border-1
+                    border-gray-200
+                    rounded-3xl
+                    w-full
+                    ">
+                                        <div class="p-8
+                        flex
+                        flex-col
+                        gap-2
                         ">
-                    <div class="brand-item ">
-                        <img src="images/vesca.png" alt="">
-                    </div>
-                    <div class="brand-item ">
-                        <img src="images/zara.png" alt="">
-                    </div>
-                    <div class="brand-item ">
-                        <img src="images/gucci.png" alt="">
-                    </div>
-                    <div class="brand-item ">
-                        <img src="images/prada.png" alt="">
-                    </div>
-                    <div class="brand-item ">
-                        <img src="images/calvin.png" alt="">
+                                            <div class="stars 
+                            text-xl
+                            text-orange-400
+                            ">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <span class="text-xl block font-roboto font-bold">
+                                                Sarah M.
+                                                <i class="fa fa-check-circle text-green-600"></i>
+                                            </span>
+                                            <p class="text-md font-roboto
+                            text-gray-500
+                            text-justify
+                            ">
+                                                "I'm blown away by the quality and style of the clothes I received from
+                                                Shop.co. From
+                                                casual wear to elegant dresses, every piece I've bought has exceeded my
+                                                expectations.”
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="client-feedback-item
+                    border-1
+                    border-gray-200
+                    rounded-3xl
+                    w-full
+                    ">
+                                        <div class="p-8
+                        flex
+                        flex-col
+                        gap-2
+                        ">
+                                            <div class="stars 
+                            text-xl
+                            text-orange-400
+                            ">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <span class="text-xl block font-roboto font-bold">
+                                                Sarah M.
+                                                <i class="fa fa-check-circle text-green-600"></i>
+                                            </span>
+                                            <p class="text-md font-roboto
+                            text-gray-500
+                            text-justify
+                            ">
+                                                "I'm blown away by the quality and style of the clothes I received from
+                                                Shop.co. From
+                                                casual wear to elegant dresses, every piece I've bought has exceeded my
+                                                expectations.”
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="client-feedback-item
+                    border-1
+                    border-gray-200
+                    rounded-3xl
+                    w-full
+                    ">
+                                        <div class="p-8
+                        flex
+                        flex-col
+                        gap-2
+                        ">
+                                            <div class="stars 
+                            text-xl
+                            text-orange-400
+                            ">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <span class="text-xl block font-roboto font-bold">
+                                                Sarah M.
+                                                <i class="fa fa-check-circle text-green-600"></i>
+                                            </span>
+                                            <p class="text-md font-roboto
+                            text-gray-500
+                            text-justify
+                            ">
+                                                "I'm blown away by the quality and style of the clothes I received from
+                                                Shop.co. From
+                                                casual wear to elegant dresses, every piece I've bought has exceeded my
+                                                expectations.”
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="load-button
+                                    flex
+                                    justify-center
+                                    pt-5
+                                    ">
+                                        <a class="
+                                        ring-2
+                                        ring-gray-300
+                                        rounded-full
+                                        py-2.5
+                                        px-8
+                                        text-black
+                                        text-lg
+                                        cursor-pointer
+                                        hover:ring-0
+                                        hover:bg-black
+                                        hover:text-white
+                                        transition
+                                        duration-300
+                                        linear
+                                        " href="#">Load More Reviews</a>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- new arrivals -->
-        <section class="new-arrivals py-10 
+        
+        <!-- related product -->
+        <section class="related-product py-10 
         ">
             <div class="container w-[90%] mx-auto">
                 <div class="section-title
@@ -316,203 +659,10 @@
                     uppercase
                     text-center
                     font-roboto font-extrabold text-black">
-                        New Arrivals
+                    You might also like
                     </h2>
                 </div>
-                <div class="new-arrivals-content
-                gap-5
-                md:flex
-                md:flex-row
-                md:justify-center
-                md:items-center
-                md:flex-wrap
-                ">
-                    
-                    <div class="new-arrivals-item
-                    flex
-                    flex-col
-                    justify-center
-                    items-center
-                    ">
-                        <div class="
-                        text-center
-                        ">
-                            <img src="images/products/t-shirt.png" alt="new-arrivals">
-                        </div>
-                        <div class="
-                        mt-3
-                        mb-3
-                        ">
-                            <h2 class="text-xl  font-medium text-black">
-                                T-shirt with Tape Details
-                            </h2>
-                            <p class="text-lg font-roboto text-orange-400">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half"></i>
-                                <span class="text-black">4.5/5</span>
-                            </p>
-                            <p class="text-2xl font-roboto 
-                            text-black
-                            font-bold
-                            ">
-                                $ 99.99
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="new-arrivals-item
-                    flex
-                    flex-col
-                    justify-center
-                    items-center
-                    ">
-                        <div class="
-                        text-center
-                        ">
-                            <img src="images/products/t-shirt.png" alt="new-arrivals">
-                        </div>
-                        <div class="
-                        mt-3
-                        mb-3
-                        ">
-                            <h2 class="text-xl  font-medium text-black">
-                                T-shirt with Tape Details
-                            </h2>
-                            <p class="text-lg font-roboto text-orange-400">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half"></i>
-                                <span class="text-black">4.5/5</span>
-                            </p>
-                            <p class="text-2xl font-roboto 
-                            text-black
-                            font-bold
-                            ">
-                                $ 99.99
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="new-arrivals-item
-                    flex
-                    flex-col
-                    justify-center
-                    items-center
-                    ">
-                        <div class="
-                        text-center
-                        ">
-                            <img src="images/products/t-shirt.png" alt="new-arrivals">
-                        </div>
-                        <div class="
-                        mt-3
-                        mb-3
-                        ">
-                            <h2 class="text-xl  font-medium text-black">
-                                T-shirt with Tape Details
-                            </h2>
-                            <p class="text-lg font-roboto text-orange-400">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half"></i>
-                                <span class="text-black">4.5/5</span>
-                            </p>
-                            <p class="text-2xl font-roboto 
-                            text-black
-                            font-bold
-                            ">
-                                $ 99.99
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="new-arrivals-item
-                    flex
-                    flex-col
-                    justify-center
-                    items-center
-                    ">
-                        <div class="
-                        text-center
-                        ">
-                            <img src="images/products/t-shirt.png" alt="new-arrivals">
-                        </div>
-                        <div class="
-                        mt-3
-                        mb-3
-                        ">
-                            <h2 class="text-xl  font-medium text-black">
-                                T-shirt with Tape Details
-                            </h2>
-                            <p class="text-lg font-roboto text-orange-400">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half"></i>
-                                <span class="text-black">4.5/5</span>
-                            </p>
-                            <p class="text-2xl font-roboto 
-                            text-black
-                            font-bold
-                            ">
-                                $ 99.99
-                            </p>
-                        </div>
-                    </div>
-
-                    
-                </div>
-                <div class="
-                    mt-10
-                    md:flex
-                    md:justify-center
-                    ">
-                        <a class="
-                        text-black
-                        ring-2
-                        ring-gray-200
-                        py-3
-                        w-full
-                        text-center
-                        font-roboto
-                        inline-block
-                        rounded-full
-                        text-xl
-                        transition
-                        hover:ring-2
-                        hover:ring-black
-                        hover:bg-black
-                        hover:text-white
-                        md:w-[15rem]
-                        md:mx-auto
-                        " href="#">View All</a>
-                    </div>
-            </div>
-        </section>
-
-        <!-- Top Selling -->
-        <section class="new-arrivals py-10 
-        ">
-            <div class="container w-[90%] mx-auto">
-                <div class="section-title
-                    mb-10
-                ">
-                    <h2 class="text-4xl 
-                    uppercase
-                    text-center
-                    font-roboto font-extrabold text-black">
-                        Top Selling
-                    </h2>
-                </div>
-                <div class="new-arrivals-content
+                <div class="related-content
                 gap-5
                 md:flex
                 md:flex-row
@@ -725,318 +875,7 @@
                 </div>
             </div>
         </section>
-
-        <!-- categories -->
-        <section class="categories py-10 
         
-        ">
-            <div class="container w-[90%] mx-auto
-            bg-gray-100
-            py-10
-            rounded-2xl
-            px-5
-            ">
-                <div class="section-title
-                    mb-8
-                ">
-                    <h2 class="text-4xl 
-                    uppercase
-                    text-center
-                    font-roboto font-extrabold text-black">
-                        BROWSE BY dress STYLE
-                    </h2>
-                </div>
-                <div class="categories-content
-                flex
-                flex-col
-                gap-6
-                md:flex-row
-                md:justify-center
-                md:items-center
-                md:flex-wrap
-                ">
-                    <div class="categories-item
-                    flex
-                    relative
-                    bg-white
-                    rounded-3xl
-                    overflow-hidden
-                    ">
-                        <h2 class="text-3xl
-                        font-semibold
-                        absolute
-                        top-4
-                        left-5
-                        ">
-                            Casual
-                        </h2>
-                        <div class="
-                        w-full
-                        ">
-                            <img class="
-                            w-full
-                            
-                            " src="images/casual.png" alt="">
-                        </div>
-                    </div>
-                    <div class="categories-item
-                    flex
-                    relative
-                    bg-white
-                    rounded-3xl
-                    overflow-hidden
-                    ">
-                        <h2 class="text-3xl
-                        font-semibold
-                        absolute
-                        top-4
-                        left-5
-                        ">
-                            Formal
-                        </h2>
-                        <div class="w-full">
-                            <img class="
-                            w-full
-                            " src="images/formal.png" alt="">
-                        </div>
-                    </div>
-                    <div class="categories-item
-                    flex
-                    relative
-                    bg-white
-                    rounded-3xl
-                    overflow-hidden
-                    ">
-                        <h2 class="text-3xl
-                        font-semibold
-                        absolute
-                        top-4
-                        left-5
-                        ">
-                            Party
-                        </h2>
-                        <div class="w-full">
-                            <img class="
-                            w-full
-                            " src="images/party.png" alt="">
-                        </div>
-                    </div>
-                    
-                    <div class="categories-item
-                    flex
-                    relative
-                    bg-white
-                    rounded-3xl
-                    overflow-hidden
-                    md:w-[20rem]
-
-                    ">
-                        <h2 class="text-3xl
-                        font-semibold
-                        absolute
-                        top-4
-                        left-5
-                        ">
-                            Gym
-                        </h2>
-                        <div class="
-                        w-full
-                        ">
-                            <img class="
-                            w-[80%]
-                            md:w-[75%]
-                            float-right
-                            " src="images/gym.png" alt="">
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- client feedback -->
-        <section class="client-feedback py-10 
-        
-        ">
-            <div class="container w-[90%] mx-auto">
-                <div class="section-title
-                    mb-7
-                    flex
-                    items-end
-                    justify-between
-                ">
-                    <h2 class="text-4xl 
-                    uppercase
-                    text-start
-                    font-roboto font-extrabold text-black">
-                        Our Happy Customers
-                    </h2>
-                    <div class="slide-arrows
-                    text-3xl
-                    flex
-                    gap-5
-                    
-                    ">
-                        <button>
-                            <i class="fa fa-arrow-left-long"></i>
-                        </button>
-                        <button>
-                            <i class="fa fa-arrow-right-long"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="client-feedback-content
-                flex
-                flex-col
-                md:flex-row
-                md:justify-center
-                md:items-center
-                gap-5
-                ">
-                
-                    <div class="client-feedback-item
-                    border-1
-                    border-gray-200
-                    rounded-3xl
-                    w-full
-                    ">
-                        <div class="p-8
-                        flex
-                        flex-col
-                        gap-2
-                        ">
-                            <div class="stars 
-                            text-xl
-                            text-orange-400
-                            ">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <span class="text-xl block font-roboto font-bold">
-                                Sarah M.
-                                <i class="fa fa-check-circle text-green-600"></i>
-                            </span>
-                            <p class="text-md font-roboto
-                            text-gray-500
-                            text-justify
-                            ">
-                                "I'm blown away by the quality and style of the clothes I received from Shop.co. From
-                                casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
-                            </p>
-                        </div>
-                    </div>
-                
-                    <div class="client-feedback-item
-                    border-1
-                    border-gray-200
-                    rounded-3xl
-                    w-full
-                    ">
-                        <div class="p-8
-                        flex
-                        flex-col
-                        gap-2
-                        ">
-                            <div class="stars 
-                            text-xl
-                            text-orange-400
-                            ">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <span class="text-xl block font-roboto font-bold">
-                                Sarah M.
-                                <i class="fa fa-check-circle text-green-600"></i>
-                            </span>
-                            <p class="text-md font-roboto
-                            text-gray-500
-                            text-justify
-                            ">
-                                "I'm blown away by the quality and style of the clothes I received from Shop.co. From
-                                casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
-                            </p>
-                        </div>
-                    </div>
-                
-                    <div class="client-feedback-item
-                    border-1
-                    border-gray-200
-                    rounded-3xl
-                    w-full
-                    ">
-                        <div class="p-8
-                        flex
-                        flex-col
-                        gap-2
-                        ">
-                            <div class="stars 
-                            text-xl
-                            text-orange-400
-                            ">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <span class="text-xl block font-roboto font-bold">
-                                Sarah M.
-                                <i class="fa fa-check-circle text-green-600"></i>
-                            </span>
-                            <p class="text-md font-roboto
-                            text-gray-500
-                            text-justify
-                            ">
-                                "I'm blown away by the quality and style of the clothes I received from Shop.co. From
-                                casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
-                            </p>
-                        </div>
-                    </div>
-                
-                    <div class="client-feedback-item
-                    border-1
-                    border-gray-200
-                    rounded-3xl
-                    w-full
-                    ">
-                        <div class="p-8
-                        flex
-                        flex-col
-                        gap-2
-                        ">
-                            <div class="stars 
-                            text-xl
-                            text-orange-400
-                            ">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <span class="text-xl block font-roboto font-bold">
-                                Sarah M.
-                                <i class="fa fa-check-circle text-green-600"></i>
-                            </span>
-                            <p class="text-md font-roboto
-                            text-gray-500
-                            text-justify
-                            ">
-                                "I'm blown away by the quality and style of the clothes I received from Shop.co. From
-                                casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
-                            </p>
-                        </div>
-                    </div>
-                    
-                </div>
-        </section>
-
         <!-- subscribe -->
         <section class="subscribe py-10 bg-gray-100">
             <div class="container w-[90%] mx-auto
